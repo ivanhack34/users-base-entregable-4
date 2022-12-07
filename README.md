@@ -21,19 +21,23 @@ git clone https://github.com/ivanhack34/users-base-entregable-4
 > **localhost:9000/api/v1/users**
 
 - prueba iniciar session, debes enviar el correo y contraseña del usuario
+- si las credenciales estan correctas te generara un token
 > **localhost:9000/api/v1/auth/login**
 
 ##### Metodo PATCH:
 - Trata de editar uno de los usuarios que creaste, adjunta en el body los datos modificados en formato  JSON
+- recuerda enviar en el HEADER HTTP la propiedad **{Authorization: JWT tu_token}**
 > **localhost:9000/api/v1/users/userId**
 
 ##### Metodo DELETE:
 - Intenta eliminar un usuario
+- recuerda enviar en el HEADER HTTP la propiedad **{Authorization: JWT tu_token}**
 > **localhost:9000/api/v1/users/userId**
 
 #### Rutas protegidas adicionales:
 ##### Metodo POST:
 - Visualiza datos del usuario logeado
+- recuerda enviar en el HEADER HTTP la propiedad **{Authorization: JWT tu_token}**
 > **localhost:9000/api/v1/users/me**
 
 <img src="https://c8.alamy.com/comp/2AXHAKK/portrait-of-nice-attractive-lovely-smart-clever-cheerful-cheery-girl-holding-in-hands-netbook-it-genius-programming-coding-isolated-on-bright-vivid-2AXHAKK.jpg" width="200" style="margin-left:10px">
