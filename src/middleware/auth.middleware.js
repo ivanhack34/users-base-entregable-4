@@ -28,3 +28,8 @@ passport.use(
     }
   })
 );
+
+
+module.exports = {
+  JwtPassport: passport
+}
